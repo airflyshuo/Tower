@@ -374,7 +374,7 @@ public class FlightDataFragment extends ApiListenerFragment implements SlidingDr
      */
     private void setupMapFragment() {
         final FragmentManager fm = getChildFragmentManager();
-        if (mapFragment == null && isGooglePlayServicesValid(true)) {
+        if (mapFragment == null /*&& isGooglePlayServicesValid(true)*/) {
             mapFragment = (FlightMapFragment) fm.findFragmentById(R.id.flight_map_fragment);
             if (mapFragment == null) {
                 mapFragment = new FlightMapFragment();
